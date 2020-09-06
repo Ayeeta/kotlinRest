@@ -4,7 +4,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class RestApiApplication
+@RestController
+class RestApiApplication{
+	
+	@GetMapping
+	fun hi():Person{
+		return Person()
+	}
+}
 
 fun main(args: Array<String>) {
 	runApplication<RestApiApplication>(*args)
