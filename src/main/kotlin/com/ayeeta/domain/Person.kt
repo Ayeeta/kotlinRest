@@ -1,0 +1,1 @@
+data class Person(val id: long = 1, val firstName: String = "", val lastName: String? = null)
