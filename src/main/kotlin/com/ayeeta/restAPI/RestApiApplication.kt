@@ -8,8 +8,8 @@ import org.springframework.boot.runApplication
 class RestApiApplication{
 	
 	@GetMapping
-	fun hi():Person{
-		return Person()
+	fun hi():String{
+		return "Hello World"
 	}
 }
 
